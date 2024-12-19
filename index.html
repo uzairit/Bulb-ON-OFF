@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh; 
+        margin: 0;
+    }
+    
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 15px 4px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            background-color: #3e8e41;
+            transform: scale(0.95);
+        }
+
+
+        button:nth-child(2) {
+            background-color: #f44336;
+        }
+
+        button:nth-child(2):hover {
+            background-color: #e53935;
+        }
+
+        button:nth-child(2):active {
+            background-color: #d32f2f;
+        }
+
+        #on {
+            display: none;
+
+        }
+
+        #off {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <img src="img/pic_bulbon.gif" id="on">
+        <img src="img/pic_bulboff.gif" id="off">
+    </main>
+    <div>
+        <button onclick="on()">ON</button>
+        <button onclick="off()">OFF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
